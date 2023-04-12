@@ -1,0 +1,88 @@
+@font-face {
+    font-weight: 400;
+    font-family: HeliosExtC, sans-serif;
+    src: url(../fonts/HeliosExtC.otf);
+}
+
+body {
+    padding: 0 60px;
+    color: #333333;
+}
+
+main {
+    background-color: aliceblue;
+    padding: 20px 30px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    font-family: HeliosExtC;
+}
+
+h2 {
+    text-align: center;
+    column-span: all;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.text-bold {
+    font-weight: bold;
+    color: red;
+}
+
+.text-italic {
+    font-style: italic;
+    width: 450px;
+}
+
+header {
+    background-color: bisque;
+    padding: 15px 30px;
+}
+
+.main-topic {
+    margin: 0 0 40px 0;
+}
+
+footer {
+    display: flex;
+}
+
+.footer-block {
+    background-color: aquamarine;
+    padding: 15px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.columns-2 p {
+    margin-top: 0;
+}
+
+.columns-2 {
+    columns: 200px 2;
+    column-gap: 15px;
+    column-rule: 1px dotted black;
+}
+
+ul {
+    list-style-image: -moz-radial-gradient();
+}
+
+li {
+    padding-right: 15px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+video {
+    width: 100%;
+}

@@ -1,0 +1,12 @@
+.main {
+    column-count: 5;
+}
+
+h1 {
+    column-span: all;
+}
+
+h2 {
+    column-span: all;
+}
+
