@@ -86,3 +86,80 @@ img {
 video {
     width: 100%;
 }
+
+table,
+td, 
+th {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+thead {
+    background-color: bisque;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 0;
+  }
+
+textarea {
+    resize: none;
+}
+
+
+button {
+    border-radius: 5px;
+    background-color: #333333;
+    color: aliceblue;
+    font-size: 18px;
+    padding: 10px 30px;
+    margin-top: 10px;
+}
+
+button:hover {
+    color: aqua;
+    cursor: pointer;
+    background-color: #333333b3;
+}
+
+.forms {
+    display: flex;
+}
+
+.form {
+    background-color: bisque;
+    border-radius: 5px;
+    padding: 20px;
+    margin-right: 50px;
+    width: 300px;
+}
+
+.form__section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form__label {
+    font-size: 14px;
+    color: #333333;
+    padding-right: 10px;
+    width: 70px;
+}
+
+input {
+    border: 1px solid #33333395;
+    padding: 7px;
+    width: 200px;
+}
+
+input::placeholder {
+    color: rgba(91, 84, 75, 0.547);
+}
