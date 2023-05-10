@@ -1,0 +1,42 @@
+.citation {
+    position: relative;
+  
+    display: block;
+  
+    margin: 0;
+    padding: map-get($spacers, 5) map-get($spacers, 4) map-get($spacers, 3);
+  
+    color: $blockquote-footer-color;
+    font-size: $blockquote-font-size;
+  
+    border-radius: $border-radius;
+    @include box-shadow($box-shadow);
+
+    &::before {
+        position: absolute;
+        top: -#{map-get($spacers, 4)};
+    
+        font-size: map-get($display-font-sizes, 1);
+        font-family: $font-family-serif;
+    
+        content: '“';
+      }
+    
+      & > &-footer {
+        margin: $spacer 0 0;
+        padding-top: map-get($spacers, 2);
+    
+        font-size: $blockquote-footer-font-size;
+        font-style: italic;
+    
+        border-top: 1px solid;
+      }
+  }
+
+  @each $color, $value in $theme-colors {
+    .citation-#{$color} {
+      color: $white;
+  
+      @include gradient-bg($value);
+    }
+  }

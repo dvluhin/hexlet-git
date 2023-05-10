@@ -1,0 +1,46 @@
+@use "sass:math";
+
+.avatar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border: $border-width solid $border-color;
+    border-radius: $border-radius-pill;
+
+    img {
+        @include img-fluid();
+        border-radius: $border-radius-pill;
+    }
+}
+
+.avatar-group {
+    @include list-unstyled();
+
+    & > .avatar {
+        margin-left: -10%;
+
+        &:first-child {
+            margin-left: 0;
+        }   
+    }
+}
+
+@each $avatar-size-name, $avatar-size-value in $avatar-sizes {
+    .avatar-#{$avatar-size-name} {
+        width: $avatar-size-value;
+        height: $avatar-size-value;
+
+        font-size: math.div($avatar-size-value, 2.5);
+    }
+}
+
+@each $color-name, $color-value in $theme-colors {
+    .avatar-#{$color-name} {
+        border-color: $color-value;
+
+        color: color-contrast($color-value);
+
+        background: $color-value;
+    }
+}
